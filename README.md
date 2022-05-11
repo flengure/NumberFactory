@@ -22,6 +22,7 @@ some of the expected output
 | o.integerPrecision | 5 |
 | o.decimalPrecision | 3 |
 | o.precision | 8 |
+| o.wordList | zero,one,two,...twenty,thirty,forty,...,hundred,thousand,million,... |
 
 
 vitrexx2002, consider adding more functionality
