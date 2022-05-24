@@ -1,5 +1,5 @@
 //import our NumberFactory object
-import { NumberFactory } from "/src/NumberFactory.js";
+import { NumberFactory } from "/src/number_factory.js";
 
 const convertBtn = document.querySelector("#convertBtn");
 const resultDiv = document.getElementById("results");
