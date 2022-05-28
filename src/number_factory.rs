@@ -32,7 +32,7 @@
                 decimal_prefix: "point",
                 decimal_seperator: ".",
                 thousands_seperator: ",",
-                tens_seperator: "-",
+                tens_seperator: " ",
             }
         }
 
