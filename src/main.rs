@@ -4,4 +4,5 @@ fn main() {
     let input = args.next().expect("No text was found");
     let a = number_factory::NumberFactory::new(&input);
     println!("{:?}", a.words());
+    println!("{:?}", a.());
 }
