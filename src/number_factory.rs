@@ -114,7 +114,8 @@
             let h = &Regex::new(r"^-+").unwrap().replace(
                 &Regex::new(r"--").unwrap().replace_all(
                     &Regex::new(r"\d{3}").unwrap().replace_all(
-                        &Regex::new(r"^(\d{1,3})((\d{3})+)$").unwrap().replace(
+                        &Regex::new(r"^(\d{1,3})((\d{3})+)$")
+                        .unwrap().replace(
                             &n[0], 
                             "$1-$2"
                         ).to_string(),
@@ -257,8 +258,13 @@
                 String::from("")
             } else {
                 let mut dec: String = self.decimal_prefix.to_string();
-                for c in Regex::new(r"0+$").unwrap().replace(num1,"").to_string().chars() {
-                    dec = format!("{} {}", dec, self.dictionary[c.to_digit(10).unwrap() as usize]);
+                for c in Regex::new(r"0+$").unwrap()
+                .replace(num1,"").to_string().chars() {
+                    dec = format!(
+                        "{} {}", 
+                        dec, 
+                        self.dictionary[c.to_digit(10).unwrap() as usize]
+                    );
                 }
                 dec.trim().to_string()
             }
